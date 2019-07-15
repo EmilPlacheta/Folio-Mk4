@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body, html {
+  font-family: 'Montserrat';
+  margin: 0;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1em 2em;
+  background-color: black;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+header .logo {
+  color: black;
+  font-weight: bold;
+}
+
+header .header-item {
+  padding-bottom: 1.5em;
+  cursor: pointer;
+  width: 25px;
+}
+
+section {
+  background-color: black;
+  height: calc(100vh - 85px);
+}
+
+section h1 {
+  font-size: 7em;
+  padding: 2em 3em;
+  width: 70%;
+  color: #cfcfcf;
+}
+
+section h1::before {
+  content: ' ';
+  border-top: 1px solid #dcff18;
+  display: block;
+  width: 6em;
+}
+
+section h1::after {
+  content: ' ';
+  background-color: #dcff18;
+  height: 12em;
+  width: 10px;
+  display: block;
+}
+
+nav {
+  position: absolute;
+  background: black;
+  padding: 2em;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+nav .close-btn {
+  width: 25px;
+  float: right;
+  cursor: pointer;
+  opacity: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 15em auto 0 auto;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (25%)[4];
+      grid-template-columns: repeat(4, 25%);
+  grid-gap: 20px;
+  width: 80%;
+}
+
+nav ul .overlay-link {
+  color: #dcff18;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: border-bottom 800ms;
+  transition: border-bottom 800ms;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 0.3em;
+}
+
+nav ul .overlay-link:hover {
+  border-bottom: 1px solid #dcff18;
+}
+
+nav ul span {
+  color: gray;
+  display: block;
+  font-size: 0.75em;
+  margin-top: 20px;
+}
+
+nav ul li {
+  opacity: 0;
+}
+
+.show-menu {
+  display: block;
+  -webkit-animation: slide-menu 0.5s ease-out forwards;
+          animation: slide-menu 0.5s ease-out forwards;
+}
+
+.show-menu .close-btn {
+  -webkit-animation: show-x 1s 0.5s forwards;
+          animation: show-x 1s 0.5s forwards;
+}
+
+.show-menu li:nth-of-type(1) {
+  -webkit-animation: menu-item 0.8s forwards 0.3s ease-in-out;
+          animation: menu-item 0.8s forwards 0.3s ease-in-out;
+}
+
+.show-menu li:nth-of-type(2) {
+  -webkit-animation: menu-item 0.8s forwards 0.6s ease-in-out;
+          animation: menu-item 0.8s forwards 0.6s ease-in-out;
+}
+
+.show-menu li:nth-of-type(3) {
+  -webkit-animation: menu-item 0.8s forwards 0.8s ease-in-out;
+          animation: menu-item 0.8s forwards 0.8s ease-in-out;
+}
+
+.show-menu li:nth-of-type(4) {
+  -webkit-animation: menu-item 0.8s forwards 0.9s ease-in-out;
+          animation: menu-item 0.8s forwards 0.9s ease-in-out;
+}
+
+@-webkit-keyframes slide-menu {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes slide-menu {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes show-x {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show-x {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes menu-item {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes menu-item {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+/*# sourceMappingURL=main.css.map */
