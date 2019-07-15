@@ -8,6 +8,7 @@
 body, html {
   font-family: 'Montserrat';
   margin: 0;
+  background-color: #000;
   overflow: hidden;
 }
 
@@ -31,7 +32,7 @@ header {
 }
 
 header .logo {
-  color: black;
+  color: white;
   font-weight: bold;
 }
 
@@ -42,14 +43,13 @@ header .header-item {
 }
 
 section {
-  background-color: black;
   height: calc(100vh - 85px);
 }
 
 section h1 {
   font-size: 7em;
   padding: 2em 3em;
-  width: 70%;
+  width: 60%;
   color: #cfcfcf;
   /*     &::after {
       content: ' ';
@@ -83,6 +83,7 @@ nav {
 nav .close-btn {
   width: 25px;
   float: right;
+  padding-top: 1.3em;
   cursor: pointer;
   opacity: 0;
 }
@@ -122,6 +123,22 @@ nav ul span {
 
 nav ul li {
   opacity: 0;
+}
+
+p {
+  padding-top: 10em;
+  padding-left: 22em;
+  width: 60em;
+  color: #cfcfcf;
+}
+
+.about-h1 {
+  padding-top: 0.2em;
+  line-height: 1em;
+}
+
+.darken {
+  color: rgba(160, 160, 160, 0.336);
 }
 
 .show-menu {
