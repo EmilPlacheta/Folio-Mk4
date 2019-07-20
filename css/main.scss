@@ -32,6 +32,10 @@ header {
     font-weight: bold;
   }
 
+  .menu-btn {
+    margin-bottom: 2em;
+  }
+
   .header-item {
     padding-bottom: 1.5em;
     cursor: pointer;
@@ -132,28 +136,37 @@ nav {
 .container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-column-gap: 5em;
-  background-color: rgb(82, 82, 82);
   margin: auto;
   width: 70vw;
 
   .text-container {
     max-width: 35em;
-    background-color: bisque;
+
+    h4 {
+      font-size: 2em;
+    }
+
+    p {
+      margin-top: 4em;
+      font-size: 1.2em;
+      color:  rgb(128, 128, 128);
+      padding-left: 1em;
+
+    }
   }
+
 
   .card-container {
     display: grid;
     grid-template-columns: 12em 12em;
     grid-gap: 10px;
-    justify-content: end;
-
+    margin-left: auto;
 
     .card {
       height: 12em;
       width: 12em;
       background-color: beige;
-      justify-self: end;
+      //justify-self: end;
     }
   }
 }
@@ -161,10 +174,12 @@ nav {
 
 
 
-
-
-
-
+.p-about {
+  padding-top: 10em;
+  padding-left: 16em;
+  width: 70vw;
+  color: rgb(207, 207, 207);
+}
 
 
 
@@ -174,19 +189,12 @@ nav {
 
 
 ///Global styles
-
-.p-about {
-  padding-top: 10em;
-  padding-left: 22em;
-  width: 60em;
-  color: rgb(207, 207, 207);
-}
 h2{
   font-size: 4em;
   line-height: 1em;
   margin-top: 2em;
   padding-left: 4em;
-  width: 60%;
+  width: 70vw;
   border-top: 1px solid  rgb(220, 255, 24);
 }
 
@@ -199,6 +207,9 @@ h4 {
   color: rgba(160, 160, 160, 0.336);
 }
 
+.hide {
+  display: none;
+}
  
 
 
