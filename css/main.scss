@@ -150,13 +150,13 @@ nav {
 
   .card-container {
     display: grid;
-    grid-template-columns: 12em 12em;
+    grid-template-columns: 10em 10em;
     grid-gap: 10px;
     margin-left: auto;
 
     .card {
-      height: 12em;
-      width: 12em;
+      height: 10em;
+      width: 10em;
       background-color: beige;
       //justify-self: end;
     }

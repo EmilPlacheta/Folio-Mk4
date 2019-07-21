@@ -144,15 +144,15 @@ nav ul li {
 .container .card-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 12em 12em;
-      grid-template-columns: 12em 12em;
+  -ms-grid-columns: 10em 10em;
+      grid-template-columns: 10em 10em;
   grid-gap: 10px;
   margin-left: auto;
 }
 
 .container .card-container .card {
-  height: 12em;
-  width: 12em;
+  height: 10em;
+  width: 10em;
   background-color: beige;
 }
 
