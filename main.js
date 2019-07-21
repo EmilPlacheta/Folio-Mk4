@@ -9,7 +9,7 @@ openMenu.addEventListener('click', function() {
 });
 
 
-//stop displaying overlay after clicking close btn
+//clode overlay after clicking close btn
 closeMenu.addEventListener('click', function() {
   overlay.classList.remove('show-menu');
 })

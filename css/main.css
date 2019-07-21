@@ -45,22 +45,11 @@ header .header-item {
   width: 25px;
 }
 
-section {
-  height: calc(100vh - 85px);
-}
-
 section h1 {
   font-size: 7em;
-  padding: 2em 3em;
+  padding: 2em 3em 0 3em;
   width: 60%;
   color: #cfcfcf;
-  /*     &::after {
-      content: ' ';
-      background-color: rgb(220, 255, 24);
-      height: 12em;
-      width: 10px;
-      display: block;
-    } */
 }
 
 section h1::before {
