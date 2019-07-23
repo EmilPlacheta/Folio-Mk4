@@ -143,7 +143,6 @@ nav {
 
     p {
       margin-top: 3em;
-      font-size: 1.2em;
       color:  rgb(128, 128, 128);
       padding-left: 1em;
 
@@ -183,7 +182,7 @@ nav {
 
 
 
-.p-about {
+.p-global {
   padding-top: 10em;
   padding-left: 16em;
   width: 70vw;
@@ -199,9 +198,11 @@ nav {
 
 ///Global styles
 h2{
+  position: absolute;
+  top: 90vh;
   font-size: 4em;
   line-height: 1em;
-  margin-top: 2em;
+  // margin-top: 2em;
   padding-left: 4em;
   width: 70vw;
   border-top: 1px solid  rgb(220, 255, 24);
@@ -209,6 +210,8 @@ h2{
 
 h4 {
   color: rgb(220, 255, 24);
+  margin-left: 8em;
+  font-size: 2em;
 }
 
 

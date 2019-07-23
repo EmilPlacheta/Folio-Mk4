@@ -140,7 +140,6 @@ nav ul li {
 
 .container .text-container p {
   margin-top: 3em;
-  font-size: 1.2em;
   color: gray;
   padding-left: 1em;
 }
@@ -179,7 +178,7 @@ nav ul li {
           transform: scale(1.3, 1.3);
 }
 
-.p-about {
+.p-global {
   padding-top: 10em;
   padding-left: 16em;
   width: 70vw;
@@ -187,9 +186,10 @@ nav ul li {
 }
 
 h2 {
+  position: absolute;
+  top: 90vh;
   font-size: 4em;
   line-height: 1em;
-  margin-top: 2em;
   padding-left: 4em;
   width: 70vw;
   border-top: 1px solid #dcff18;
@@ -197,6 +197,8 @@ h2 {
 
 h4 {
   color: #dcff18;
+  margin-left: 8em;
+  font-size: 2em;
 }
 
 .darken {
