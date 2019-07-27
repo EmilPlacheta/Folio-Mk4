@@ -136,11 +136,17 @@ nav ul li {
 
 .container .text-container h4 {
   font-size: 2em;
+  margin-left: -1em;
 }
 
 .container .text-container p {
   margin-top: 3em;
   color: gray;
+  padding-left: 1em;
+}
+
+.container .text-container .tech-used {
+  padding-top: 0.5em;
   padding-left: 1em;
 }
 
@@ -197,8 +203,13 @@ h2 {
 
 h4 {
   color: #dcff18;
-  margin-left: 8em;
+  margin-left: 6em;
   font-size: 2em;
+}
+
+.fab {
+  padding-right: 0.2em;
+  font-size: 1.5em;
 }
 
 .darken {

@@ -44,7 +44,6 @@ header {
 }
 
 section {
-  //height: calc(100vh - 85px);
 
   h1 {
     font-size: 7em;
@@ -139,6 +138,7 @@ nav {
 
     h4 {
       font-size: 2em;
+      margin-left: -1em;
     }
 
     p {
@@ -146,6 +146,11 @@ nav {
       color:  rgb(128, 128, 128);
       padding-left: 1em;
 
+    }
+
+    .tech-used {
+      padding-top: 0.5em;
+      padding-left: 1em;
     }
   }
 
@@ -182,12 +187,7 @@ nav {
 
 
 
-.p-global {
-  padding-top: 10em;
-  padding-left: 16em;
-  width: 70vw;
-  color: rgb(207, 207, 207);
-}
+
 
 
 
@@ -197,6 +197,14 @@ nav {
 
 
 ///Global styles
+
+.p-global {
+  padding-top: 10em;
+  padding-left: 16em;
+  width: 70vw;
+  color: rgb(207, 207, 207);
+}
+
 h2{
   position: absolute;
   top: 90vh;
@@ -210,8 +218,13 @@ h2{
 
 h4 {
   color: rgb(220, 255, 24);
-  margin-left: 8em;
+  margin-left: 6em;
   font-size: 2em;
+}
+
+.fab {
+  padding-right: 0.2em;
+  font-size: 1.5em;
 }
 
 
