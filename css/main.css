@@ -123,6 +123,8 @@ nav ul li {
   display: grid;
   -ms-grid-columns: 2fr 1fr;
       grid-template-columns: 2fr 1fr;
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
   margin: auto;
   width: 70vw;
 }
