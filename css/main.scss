@@ -159,7 +159,7 @@ nav {
   .card-container {
     display: grid;
     grid-template-columns: 10em 10em;
-    grid-gap: 10px;
+    grid-gap: 1em;
     grid-column:  2 / 3;
 
     .card {
@@ -180,6 +180,15 @@ nav {
         z-index: 5;
         filter: grayscale(80%) drop-shadow(0 0 4px rgb(220, 255, 24));
         transform: scale(1.3, 1.3);
+      }
+    }
+
+    .card-large {
+      height: 22em;
+      width: 22em;
+      justify-self: end;
+      img {
+        width: 100%;
       }
     }
   }
@@ -226,6 +235,32 @@ h4 {
 .fab {
   padding-right: 0.2em;
   font-size: 1.5em;
+}
+
+
+.btn-container {
+  display: flex;
+  margin-top: 2em;
+
+  .git-btn {
+    cursor: pointer;
+    width: 25px;
+  }
+
+  .visit-btn {
+    background-color: rgb(220, 255, 24);
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    margin-left: 1.5em;
+    margin-right: 2em;
+    height: 1.6rem;
+    width: 4rem;
+
+    a {
+      color: #000;
+    }
+  }
 }
 
 
