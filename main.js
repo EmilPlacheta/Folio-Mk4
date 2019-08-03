@@ -1,7 +1,25 @@
+//nvigation
 const overlay = document.getElementById('overlay');
 const closeMenu = document.getElementById('close-menu');
 const openMenu = document.getElementById('open-menu');
 const cardContainer = document.querySelector(".card-container");
+
+//work/portfolio tiles
+const drumkit = document.getElementById('drumkit');
+const mixer = document.getElementById('mixer');
+const radiant = document.getElementById('radiant');
+const brewhound = document.getElementById('brewhound');
+
+
+//work/portfolio paragraphs
+
+const drukmitPara = document.getElementById('drumkit-para');
+const mixerPara = document.getElementById('mixer-para');
+const radiantPara = document.getElementById('radiant-para');
+const brewhoundPara = document.getElementById('brewhound-para');
+
+
+
 
 
 //display overlay (nav) after clicking the hamburgr menu
@@ -11,8 +29,50 @@ openMenu.addEventListener('click', function() {
 });
 
 
-//clode overlay after clicking close btn
+//close overlay after clicking close btn
 closeMenu.addEventListener('click', function() {
   overlay.classList.remove('show-menu');
+})
+
+
+
+//display project description when hovering over the card tile
+//drumkit
+drumkit.addEventListener('mouseenter', () => {
+  drukmitPara.classList.remove('hide')
+})
+
+drumkit.addEventListener('mouseleave', () => {
+  drukmitPara.classList.add('hide')
+})
+
+
+//mixer
+mixer.addEventListener('mouseenter', () => {
+  mixerPara.classList.remove('hide')
+})
+
+mixer.addEventListener('mouseleave', () => {
+  mixerPara.classList.add('hide')
+})
+
+
+//brewhound
+brewhound.addEventListener('mouseenter', () => {
+  brewhoundPara.classList.remove('hide')
+})
+
+brewhound.addEventListener('mouseleave', () => {
+  brewhoundPara.classList.add('hide')
+})
+
+//radiant
+
+radiant.addEventListener('mouseenter', () => {
+  radiantPara.classList.remove('hide')
+})
+
+radiant.addEventListener('mouseleave', () => {
+  radiantPara.classList.add('hide')
 })
 
