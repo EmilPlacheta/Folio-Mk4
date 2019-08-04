@@ -13,6 +13,7 @@ const brewhound = document.getElementById('brewhound');
 
 //work/portfolio paragraphs
 
+const workIntro = document.getElementById('work-intro');
 const drukmitPara = document.getElementById('drumkit-para');
 const mixerPara = document.getElementById('mixer-para');
 const radiantPara = document.getElementById('radiant-para');
@@ -39,6 +40,7 @@ closeMenu.addEventListener('click', function() {
 //display project description when hovering over the card tile
 //drumkit
 drumkit.addEventListener('mouseenter', () => {
+  workIntro.classList.add('hide')
   drukmitPara.classList.remove('hide')
 })
 
@@ -49,6 +51,7 @@ drumkit.addEventListener('mouseleave', () => {
 
 //mixer
 mixer.addEventListener('mouseenter', () => {
+  workIntro.classList.add('hide')
   mixerPara.classList.remove('hide')
 })
 
@@ -59,6 +62,7 @@ mixer.addEventListener('mouseleave', () => {
 
 //brewhound
 brewhound.addEventListener('mouseenter', () => {
+  workIntro.classList.add('hide')
   brewhoundPara.classList.remove('hide')
 })
 
@@ -69,6 +73,7 @@ brewhound.addEventListener('mouseleave', () => {
 //radiant
 
 radiant.addEventListener('mouseenter', () => {
+  workIntro.classList.add('hide')
   radiantPara.classList.remove('hide')
 })
 

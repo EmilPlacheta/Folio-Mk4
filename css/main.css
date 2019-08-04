@@ -123,13 +123,14 @@ nav ul li {
   display: grid;
   -ms-grid-columns: 2fr 1fr;
       grid-template-columns: 2fr 1fr;
-  -webkit-column-gap: 1em;
-          column-gap: 1em;
+  -webkit-column-gap: 3em;
+          column-gap: 3em;
   margin: auto;
   width: 70vw;
 }
 
 .container .text-container {
+  max-width: 35em;
   width: 100%;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -155,6 +156,7 @@ nav ul li {
 .container .card-container {
   display: -ms-grid;
   display: grid;
+  opacity: 0;
   -ms-grid-columns: 10em 10em;
       grid-template-columns: 10em 10em;
   grid-gap: 1em;
@@ -180,8 +182,8 @@ nav ul li {
 
 .container .card-container .card img:hover {
   z-index: 5;
-  -webkit-filter: grayscale(80%) drop-shadow(0 0 4px #dcff18);
-          filter: grayscale(80%) drop-shadow(0 0 4px #dcff18);
+  -webkit-filter: grayscale(40%) drop-shadow(0 0 4px #dcff18);
+          filter: grayscale(40%) drop-shadow(0 0 4px #dcff18);
   -webkit-transform: scale(1.3, 1.3);
           transform: scale(1.3, 1.3);
 }
@@ -292,8 +294,13 @@ h4 {
 }
 
 .text-container {
-  -webkit-animation: menu-item 0.6s forwards 0s ease-in-out;
-          animation: menu-item 0.6s forwards 0s ease-in-out;
+  -webkit-animation: menu-item 0.8s forwards 0s ease-out;
+          animation: menu-item 0.8s forwards 0s ease-out;
+}
+
+.card-container {
+  -webkit-animation: menu-item 0.8s forwards 0.2s ease-out;
+          animation: menu-item 0.8s forwards 0.2s ease-out;
 }
 
 @-webkit-keyframes slide-menu {
