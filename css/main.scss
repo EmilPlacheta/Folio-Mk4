@@ -160,6 +160,7 @@ nav {
     display: grid;
     opacity: 0;
     grid-template-columns: 10em 10em;
+    grid-template-rows: 10em 10em;
     grid-gap: 1em;
     grid-column:  2 / 3;
 
@@ -187,8 +188,14 @@ nav {
       height: 22em;
       width: 22em;
       justify-self: end;
+
+      :nth-child(2) {
+        grid-row: 2 / 3
+      }
       img {
         width: 100%;
+        height: 100%;
+        object-fit: contain;
       }
     }
   }
