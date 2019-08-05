@@ -149,6 +149,7 @@ nav ul li {
 }
 
 .container .text-container .tech-used {
+  opacity: 0;
   padding-top: 0.5em;
   padding-left: 1em;
 }
@@ -156,7 +157,6 @@ nav ul li {
 .container .card-container {
   display: -ms-grid;
   display: grid;
-  opacity: 0;
   -ms-grid-columns: 10em 10em;
       grid-template-columns: 10em 10em;
   -ms-grid-rows: 10em 10em;
@@ -197,17 +197,16 @@ nav ul li {
       justify-self: end;
 }
 
-.container .card-container .card-large :nth-child(2) {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
-}
-
 .container .card-container .card-large img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.container .fab {
+  padding-right: 0.2em;
+  font-size: 1.5em;
 }
 
 .p-global {
@@ -231,11 +230,6 @@ h4 {
   color: #dcff18;
   margin-left: 6em;
   font-size: 2em;
-}
-
-.fab {
-  padding-right: 0.2em;
-  font-size: 1.5em;
 }
 
 .btn-container {
@@ -275,8 +269,8 @@ h4 {
 
 .show-menu {
   display: block;
-  -webkit-animation: slide-menu 0.5s ease-out forwards;
-          animation: slide-menu 0.5s ease-out forwards;
+  -webkit-animation: slide-menu 0.3s ease-out forwards;
+          animation: slide-menu 0.3s ease-out forwards;
 }
 
 .show-menu .close-btn {
@@ -285,33 +279,52 @@ h4 {
 }
 
 .show-menu li:nth-of-type(1) {
-  -webkit-animation: menu-item 0.8s forwards 0.3s ease-in-out;
-          animation: menu-item 0.8s forwards 0.3s ease-in-out;
+  -webkit-animation: menu-item 0.4s forwards 0.3s ease-in-out;
+          animation: menu-item 0.4s forwards 0.3s ease-in-out;
 }
 
 .show-menu li:nth-of-type(2) {
-  -webkit-animation: menu-item 0.8s forwards 0.6s ease-in-out;
-          animation: menu-item 0.8s forwards 0.6s ease-in-out;
+  -webkit-animation: menu-item 0.6s forwards 0.5s ease-in-out;
+          animation: menu-item 0.6s forwards 0.5s ease-in-out;
 }
 
 .show-menu li:nth-of-type(3) {
-  -webkit-animation: menu-item 0.8s forwards 0.8s ease-in-out;
-          animation: menu-item 0.8s forwards 0.8s ease-in-out;
+  -webkit-animation: menu-item 0.6s forwards 0.7s ease-in-out;
+          animation: menu-item 0.6s forwards 0.7s ease-in-out;
 }
 
 .show-menu li:nth-of-type(4) {
-  -webkit-animation: menu-item 0.8s forwards 0.9s ease-in-out;
-          animation: menu-item 0.8s forwards 0.9s ease-in-out;
+  -webkit-animation: menu-item 0.6s forwards 0.8s ease-in-out;
+          animation: menu-item 0.6s forwards 0.8s ease-in-out;
 }
 
 .text-container {
-  -webkit-animation: menu-item 0.8s forwards 0s ease-out;
-          animation: menu-item 0.8s forwards 0s ease-out;
+  -webkit-animation: menu-item 0.4s forwards 0s ease-out;
+          animation: menu-item 0.4s forwards 0s ease-out;
+}
+
+.text-container .tech-used {
+  opacity: 0;
+  -webkit-animation: show-x 1s forwards 0s ease-in;
+          animation: show-x 1s forwards 0s ease-in;
+}
+
+.text-container p {
+  opacity: 0;
+  -webkit-animation: show-x 1s forwards 0.2s ease-out;
+          animation: show-x 1s forwards 0.2s ease-out;
+}
+
+.text-container .btn-container {
+  opacity: 0;
+  -webkit-animation: show-x 1s forwards 0.4s ease-in;
+          animation: show-x 1s forwards 0.4s ease-in;
 }
 
 .card-container {
-  -webkit-animation: menu-item 0.8s forwards 0.2s ease-out;
-          animation: menu-item 0.8s forwards 0.2s ease-out;
+  opacity: 0;
+  -webkit-animation: show-x 1s forwards 0.1s ease-in;
+          animation: show-x 1s forwards 0.1s ease-in;
 }
 
 @-webkit-keyframes slide-menu {
