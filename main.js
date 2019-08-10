@@ -23,6 +23,10 @@ const brewhoundPara = document.getElementById('brewhound-para');
 
 
 
+
+
+
+
 //display overlay (nav) after clicking the hamburgr menu
 openMenu.addEventListener('click', function() {
   overlay.classList.add('show-menu');
@@ -38,6 +42,9 @@ closeMenu.addEventListener('click', function() {
 
 
 //display project description when hovering over the card tile
+
+
+if(screen.width > 700) {
 //drumkit
 drumkit.addEventListener('mouseenter', () => {
   workIntro.classList.add('hide')
@@ -80,4 +87,7 @@ radiant.addEventListener('mouseenter', () => {
 radiant.addEventListener('mouseleave', () => {
   radiantPara.classList.add('hide')
 })
+}
+
+
 

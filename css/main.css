@@ -61,7 +61,7 @@ section h1::before {
 }
 
 section .btn-container {
-  padding: 2em 3em 0 15em;
+  margin: 5em 3em 0 15em;
 }
 
 nav {
@@ -257,8 +257,8 @@ h4 {
   border: none;
   margin-left: 1.5em;
   margin-right: 1em;
-  color: #000;
   padding: 5px 15px;
+  color: #000;
 }
 
 .darken {
@@ -399,20 +399,85 @@ h4 {
   section h1 {
     font-size: 3em;
   }
+  section .btn-container {
+    margin: 5em 3em 0 2em;
+  }
+  .container .card-container .card-large {
+    width: 100vw;
+  }
+  .container .card-container .card-large img {
+    width: 20em;
+  }
+  .container .card-container .card-large img:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  nav ul {
+    margin-top: 10em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav ul span {
+    display: none;
+  }
   h2 {
     display: none;
   }
   h4 {
-    margin-left: 1em;
+    margin-left: 1.5em;
   }
   .p-global {
     font-size: 0.8em;
     padding-left: 4em;
     padding-top: 2em;
   }
-  .btn-container {
-    margin-left: -13em;
-    padding-top: 2em;
+}
+
+@media only screen and (max-width: 800px), only screen and (max-device-width: 800px) {
+  .container {
+    margin-left: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container #work-intro {
+    display: none;
+  }
+  .container .text-container {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .container .text-container h4 {
+    margin-left: 0.3em;
+  }
+  .container .text-container p {
+    opacity: 1;
+    font-size: 0.8em;
+    -webkit-animation: none;
+            animation: none;
+  }
+  .container .card-container {
+    opacity: 1;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-animation: none;
+            animation: none;
+    grid-gap: 0.5em;
+  }
+  .container .card-container .card img:hover {
+    -webkit-transform: none;
+            transform: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
