@@ -41,7 +41,7 @@ closeMenu.addEventListener('click', function() {
 
 
 
-//display project description when hovering over the card tile
+//display project description when hovering over the card tile, but only on lsrge screens
 
 
 if(screen.width > 700) {
