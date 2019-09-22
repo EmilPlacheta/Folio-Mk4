@@ -5,7 +5,8 @@
   margin: 0;
 }
 
-body, html {
+body,
+html {
   font-family: 'Montserrat';
   margin: 0;
   background-color: #000;
@@ -62,6 +63,17 @@ section h1::before {
 
 section .btn-container {
   margin: 5em 3em 0 15em;
+}
+
+.cv {
+  position: absolute;
+  top: 1em;
+  left: 25%;
+}
+
+.cv embed {
+  width: 50vw;
+  height: 80vh;
 }
 
 nav {
