@@ -34,11 +34,30 @@ header {
 
 header .logo {
   color: white;
-  font-weight: bold;
 }
 
 header .menu-btn {
-  margin-bottom: 2em;
+  margin-bottom: 3em;
+  padding-bottom: 0.65em;
+}
+
+header .menu-and-back-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+header .menu-and-back-btn img {
+  width: 25px;
+  margin-left: 1.5em;
+  cursor: pointer;
+}
+
+header .menu-and-back-btn .back-btn {
+  width: 35px;
 }
 
 header .header-item {
@@ -63,17 +82,6 @@ section h1::before {
 
 section .btn-container {
   margin: 5em 3em 0 15em;
-}
-
-.cv {
-  position: absolute;
-  top: 1em;
-  left: 25%;
-}
-
-.cv embed {
-  width: 50vw;
-  height: 80vh;
 }
 
 nav {
@@ -226,6 +234,17 @@ nav ul li {
      object-fit: contain;
 }
 
+.cv {
+  position: absolute;
+  top: 1em;
+  left: 15%;
+}
+
+.cv embed {
+  width: 60vw;
+  height: 80vh;
+}
+
 .p-global {
   padding-top: 10em;
   padding-left: 16em;
@@ -279,6 +298,10 @@ h4 {
 
 .hide {
   display: none;
+}
+
+.not-visible {
+  opacity: 0;
 }
 
 .show-menu {

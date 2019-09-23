@@ -19,7 +19,7 @@ a {
   color: rgb(220, 255, 24);
 }
 
-//Landing page & nav
+//Landing page & vertical side navbar
 
 header {
   display: flex;
@@ -29,12 +29,29 @@ header {
   align-items: flex-end;
 
   .logo {
+    //removed for now
     color: white;
-    font-weight: bold;
   }
 
   .menu-btn {
-    margin-bottom: 2em;
+    margin-bottom: 3em;
+    padding-bottom: 0.65em;
+  }
+
+  .menu-and-back-btn {
+    display: flex;
+    align-items: baseline;
+
+    img {
+      width: 25px;
+      margin-left: 1.5em;
+      cursor: pointer;
+    }
+
+    .back-btn {
+      width: 35px;
+      //align-self: flex-start;
+    }
   }
 
   .header-item {
@@ -61,17 +78,6 @@ section {
 
   .btn-container {
     margin: 5em 3em 0 15em;
-  }
-}
-
-.cv {
-  position: absolute;
-  top: 1em;
-  left: 25%;
-
-  embed {
-    width: 50vw;
-    height: 80vh;
   }
 }
 
@@ -206,6 +212,17 @@ nav {
   }
 }
 
+.cv {
+  position: absolute;
+  top: 1em;
+  left: 15%;
+
+  embed {
+    width: 60vw;
+    height: 80vh;
+  }
+}
+
 ///Global styles
 
 .p-global {
@@ -259,6 +276,10 @@ h4 {
 
 .hide {
   display: none;
+}
+
+.not-visible {
+  opacity: 0;
 }
 
 //Animations

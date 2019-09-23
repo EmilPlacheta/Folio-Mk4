@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 105 105">
+  <g id="back-btn" transform="translate(-667.543 -364)">
+    <g id="arrow" transform="translate(690.5 386.758)">
+      <line id="Line_1" data-name="Line 1" x2="60" transform="translate(0 29.955)" fill="none" stroke="#dcff18" stroke-width="5"/>
+      <path id="Path_1" data-name="Path 1" d="M622.188,287.5,593.5,317.455l28.688,30.153" transform="translate(-593.5 -287.5)" fill="none" stroke="#dcff18" stroke-width="5"/>
+    </g>
+<g id="Ellipse_1" data-name="Ellipse 1" transform="translate(667.543 364)" fill="none" stroke="#dcff18" stroke-width="3">
+      <circle cx="52.5" cy="52.5" r="52.5" stroke="none"/>
+      <circle cx="52.5" cy="52.5" r="51" fill="none"
+      stroke-width="5"/>
+    </g>
+  </g>
+</svg>
