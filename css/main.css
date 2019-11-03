@@ -192,8 +192,8 @@ nav ul li {
 .container .card-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 10em 10em;
-      grid-template-columns: 10em 10em;
+  -ms-grid-columns: 10em 10em 10em;
+      grid-template-columns: 10em 10em 10em;
   -ms-grid-rows: 10em 10em;
       grid-template-rows: 10em 10em;
   grid-gap: 1em;
