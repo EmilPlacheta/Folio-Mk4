@@ -89,6 +89,10 @@ section .btn-container {
   margin: 5em 3em 0 15em;
 }
 
+.splash h1 {
+  line-height: 6rem;
+}
+
 nav {
   position: absolute;
   z-index: 10;
