@@ -9,6 +9,8 @@ const drumkit = document.getElementById('drumkit');
 const mixer = document.getElementById('mixer');
 const radiant = document.getElementById('radiant');
 const brewhound = document.getElementById('brewhound');
+const ladiva = document.getElementById('ladiva');
+const guf = document.getElementById('guf');
 
 //work/portfolio paragraphs
 
@@ -17,6 +19,8 @@ const drukmitPara = document.getElementById('drumkit-para');
 const mixerPara = document.getElementById('mixer-para');
 const radiantPara = document.getElementById('radiant-para');
 const brewhoundPara = document.getElementById('brewhound-para');
+const ladivaPara = document.getElementById('ladiva-para');
+const gufPara = document.getElementById('guf-para');
 
 //display overlay (nav) after clicking the hamburger menu
 openMenu.addEventListener('click', function() {
@@ -71,5 +75,27 @@ if (screen.width > 700) {
 
   radiant.addEventListener('mouseleave', () => {
     radiantPara.classList.add('hide');
+  });
+
+  //ladiva
+
+  ladiva.addEventListener('mouseenter', () => {
+    workIntro.classList.add('hide');
+    ladivaPara.classList.remove('hide');
+  });
+
+  ladiva.addEventListener('mouseleave', () => {
+    ladivaPara.classList.add('hide');
+  });
+
+  //GUF
+
+  guf.addEventListener('mouseenter', () => {
+    workIntro.classList.add('hide');
+    gufPara.classList.remove('hide');
+  });
+
+  guf.addEventListener('mouseleave', () => {
+    gufPara.classList.add('hide');
   });
 }
