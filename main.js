@@ -8,6 +8,7 @@ const cardContainer = document.querySelector('.card-container');
 const drumkit = document.getElementById('drumkit');
 const mixer = document.getElementById('mixer');
 const radiant = document.getElementById('radiant');
+const propertier = document.getElementById('propertier');
 const brewhound = document.getElementById('brewhound');
 const ladiva = document.getElementById('ladiva');
 const guf = document.getElementById('guf');
@@ -18,6 +19,7 @@ const workIntro = document.getElementById('work-intro');
 const drukmitPara = document.getElementById('drumkit-para');
 const mixerPara = document.getElementById('mixer-para');
 const radiantPara = document.getElementById('radiant-para');
+const propertierPara = document.getElementById('propertier-para');
 const brewhoundPara = document.getElementById('brewhound-para');
 const ladivaPara = document.getElementById('ladiva-para');
 const gufPara = document.getElementById('guf-para');
@@ -38,8 +40,8 @@ closeMenu.addEventListener('click', function() {
 if (screen.width > 700) {
   //drumkit
   drumkit.addEventListener('mouseenter', () => {
-    workIntro.classList.add('hide');
     drukmitPara.classList.remove('hide');
+    workIntro.classList.add('hide');
   });
 
   drumkit.addEventListener('mouseleave', () => {
@@ -97,5 +99,16 @@ if (screen.width > 700) {
 
   guf.addEventListener('mouseleave', () => {
     gufPara.classList.add('hide');
+  });
+
+  //propertier
+
+  propertier.addEventListener('mouseenter', () => {
+    workIntro.classList.add('hide');
+    propertierPara.classList.remove('hide');
+  });
+
+  propertier.addEventListener('mouseleave', () => {
+    propertierPara.classList.add('hide');
   });
 }

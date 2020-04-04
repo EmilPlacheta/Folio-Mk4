@@ -164,7 +164,8 @@ nav ul li {
 }
 
 .container .text-container {
-  max-width: 35em;
+  position: absolute;
+  max-width: 35rem;
   width: 100%;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -196,10 +197,10 @@ nav ul li {
 .container .card-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 10em 10em 10em;
-      grid-template-columns: 10em 10em 10em;
-  -ms-grid-rows: 10em 10em;
-      grid-template-rows: 10em 10em;
+  -ms-grid-columns: (10rem)[3];
+      grid-template-columns: repeat(3, 10rem);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   grid-gap: 1em;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -223,8 +224,8 @@ nav ul li {
 
 .container .card-container .card img:hover {
   z-index: 5;
-  -webkit-filter: grayscale(40%) drop-shadow(0 0 4px #dcff18);
-          filter: grayscale(40%) drop-shadow(0 0 4px #dcff18);
+  -webkit-filter: grayscale(10%) drop-shadow(0 0 4px #0c0c0c);
+          filter: grayscale(10%) drop-shadow(0 0 4px #0c0c0c);
   -webkit-transform: scale(1.3, 1.3);
           transform: scale(1.3, 1.3);
 }
