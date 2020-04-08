@@ -155,6 +155,9 @@ nav ul li {
 .container {
   display: -ms-grid;
   display: grid;
+  position: absolute;
+  top: 20%;
+  left: 20%;
   -ms-grid-columns: 2fr 1fr;
       grid-template-columns: 2fr 1fr;
   -webkit-column-gap: 3em;
@@ -205,11 +208,6 @@ nav ul li {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
-}
-
-.container .card-container .card {
-  height: 10em;
-  width: 10em;
 }
 
 .container .card-container .card img {
@@ -447,11 +445,21 @@ h4 {
   section .btn-container {
     margin: 5em 3em 0 2em;
   }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .container .card-container .card-large {
     width: 80vw;
   }
   .container .card-container .card-large img {
     width: 20em;
+    display: none;
   }
   .container .card-container .card-large img:hover {
     -webkit-transform: none;
@@ -485,7 +493,8 @@ h4 {
 
 @media only screen and (max-width: 800px), only screen and (max-device-width: 800px) {
   .container {
-    margin-left: 2em;
+    position: relative;
+    left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -523,6 +532,9 @@ h4 {
   .container .card-container .card img:hover {
     -webkit-transform: none;
             transform: none;
+  }
+  h2 {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

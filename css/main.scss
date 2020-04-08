@@ -144,6 +144,9 @@ nav {
 
 .container {
   display: grid;
+  position: absolute;
+  top: 20%;
+  left: 20%;
   grid-template-columns: 2fr 1fr;
   column-gap: 3em;
   margin: auto;
@@ -186,8 +189,8 @@ nav {
     grid-column: 2 / 3;
 
     .card {
-      height: 10em;
-      width: 10em;
+      //height: 10em;
+      //width: 10em;
 
       img {
         position: relative;
@@ -385,11 +388,18 @@ h4 {
     }
   }
   .container {
+    display: flex;
+    flex-direction: column;
+
+    .text-container {
+    }
+
     .card-container {
       .card-large {
         width: 80vw;
         img {
           width: 20em;
+          display: none;
         }
         img:hover {
           transform: none;
@@ -425,7 +435,8 @@ h4 {
 @media only screen and (max-width: 800px),
   only screen and (max-device-width: 800px) {
   .container {
-    margin-left: 2em;
+    position: relative;
+    left: 0;
     display: flex;
     flex-direction: column;
 
@@ -459,5 +470,9 @@ h4 {
         }
       }
     }
+  }
+
+  h2 {
+    display: none;
   }
 }
