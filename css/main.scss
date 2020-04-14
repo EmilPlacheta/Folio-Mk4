@@ -264,16 +264,18 @@ h4 {
   .git-btn {
     cursor: pointer;
     width: 25px;
+    padding-top: 3px;
   }
 
   .visit-btn {
     background-color: rgb(220, 255, 24);
     text-transform: uppercase;
+    letter-spacing: 1px;
     font-size: 0.8em;
     font-weight: bold;
     border: none;
-    margin-left: 1.5em;
-    margin-right: 2em;
+    margin-left: 1rem;
+    margin-right: 2rem;
     padding: 5px 15px;
     color: #000;
   }
@@ -390,9 +392,6 @@ h4 {
   .container {
     display: flex;
     flex-direction: column;
-
-    .text-container {
-    }
 
     .card-container {
       .card-large {
