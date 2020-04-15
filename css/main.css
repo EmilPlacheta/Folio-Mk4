@@ -253,6 +253,10 @@ nav ul li {
   height: 80vh;
 }
 
+main .btn-container {
+  margin: 5em 3em 0 15em;
+}
+
 .p-global {
   padding-top: 10em;
   padding-left: 16em;
