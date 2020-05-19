@@ -9,9 +9,10 @@ const drumkit = document.getElementById('drumkit');
 const mixer = document.getElementById('mixer');
 const radiant = document.getElementById('radiant');
 const propertier = document.getElementById('propertier');
-const brewhound = document.getElementById('brewhound');
+const twickenham = document.getElementById('twickenham');
 const ladiva = document.getElementById('ladiva');
 const guf = document.getElementById('guf');
+const portfolio = document.getElementById('portfolio');
 
 //work/portfolio paragraphs
 
@@ -20,9 +21,10 @@ const drukmitPara = document.getElementById('drumkit-para');
 const mixerPara = document.getElementById('mixer-para');
 const radiantPara = document.getElementById('radiant-para');
 const propertierPara = document.getElementById('propertier-para');
-const brewhoundPara = document.getElementById('brewhound-para');
+const twickenhamPara = document.getElementById('twickenham-para');
 const ladivaPara = document.getElementById('ladiva-para');
 const gufPara = document.getElementById('guf-para');
+const portfolioPara = document.getElementById('portfolio-para');
 
 //display overlay (nav) after clicking the hamburger menu
 openMenu.addEventListener('click', function() {
@@ -58,18 +60,17 @@ if (screen.width > 700) {
     mixerPara.classList.add('hide');
   });
 
-  //brewhound
-  brewhound.addEventListener('mouseenter', () => {
+  //twickenham
+  twickenham.addEventListener('mouseenter', () => {
     workIntro.classList.add('hide');
-    brewhoundPara.classList.remove('hide');
+    twickenhamPara.classList.remove('hide');
   });
 
-  brewhound.addEventListener('mouseleave', () => {
-    brewhoundPara.classList.add('hide');
+  twickenham.addEventListener('mouseleave', () => {
+    twickenhamPara.classList.add('hide');
   });
 
   //radiant
-
   radiant.addEventListener('mouseenter', () => {
     workIntro.classList.add('hide');
     radiantPara.classList.remove('hide');
@@ -80,7 +81,6 @@ if (screen.width > 700) {
   });
 
   //ladiva
-
   ladiva.addEventListener('mouseenter', () => {
     workIntro.classList.add('hide');
     ladivaPara.classList.remove('hide');
@@ -91,7 +91,6 @@ if (screen.width > 700) {
   });
 
   //GUF
-
   guf.addEventListener('mouseenter', () => {
     workIntro.classList.add('hide');
     gufPara.classList.remove('hide');
@@ -102,7 +101,6 @@ if (screen.width > 700) {
   });
 
   //propertier
-
   propertier.addEventListener('mouseenter', () => {
     workIntro.classList.add('hide');
     propertierPara.classList.remove('hide');
@@ -110,5 +108,15 @@ if (screen.width > 700) {
 
   propertier.addEventListener('mouseleave', () => {
     propertierPara.classList.add('hide');
+  });
+
+  //portfolio
+  portfolio.addEventListener('mouseenter', () => {
+    workIntro.classList.add('hide');
+    portfolioPara.classList.remove('hide');
+  });
+
+  portfolio.addEventListener('mouseleave', () => {
+    portfolioPara.classList.add('hide');
   });
 }
