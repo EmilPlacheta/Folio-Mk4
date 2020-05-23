@@ -89,6 +89,10 @@ section .btn-container {
   margin: 5em 3em 0 15em;
 }
 
+section .cta {
+  color: #fff;
+}
+
 .splash h1 {
   line-height: 6rem;
 }
@@ -445,11 +449,12 @@ h4 {
 }
 
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
-  section h1 {
-    font-size: 3em;
-  }
   section .btn-container {
     margin: 5em 3em 0 2em;
+  }
+  .splash h1 {
+    font-size: 3em;
+    line-height: 2.8rem;
   }
   .container {
     display: -webkit-box;
