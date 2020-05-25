@@ -189,7 +189,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(3, 10rem);
     grid-template-rows: auto;
-    grid-gap: 1em;
+    grid-gap: 0.7rem;
     grid-column: 2 / 3;
 
     .card {

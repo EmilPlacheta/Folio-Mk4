@@ -208,7 +208,7 @@ nav ul li {
       grid-template-columns: repeat(3, 10rem);
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  grid-gap: 1em;
+  grid-gap: 0.7rem;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
