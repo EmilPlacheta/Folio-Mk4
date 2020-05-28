@@ -6,13 +6,13 @@ const openMenu = document.getElementById('open-menu');
 
 //my work page
 const cards = document.querySelectorAll('.card');
-const checForCard = document.querySelector('.card');
+const checkForCard = document.querySelector('.card');
 const cardText = document.querySelectorAll('.card-text');
 
 //display project description paragraph when hovering over the card tile, only on pages with cards.
 
 function showCardParagraphOnHover() {
-  if(!checForCard) {
+  if(!checkForCard) {
     return
   } else {
     function handleHoverShow(e) {
